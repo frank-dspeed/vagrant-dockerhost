@@ -1,3 +1,42 @@
+# Vagrant DOCKERHOST Provider based on the VAGRANT AWS Provider
+Goal is to Use a Docker Host like the AWS Cloud.
+
+
+## Features DOCKERHOST Provider
+
+* Boot Docker Containers.
+* SSH into the Containers.
+* Provision the Containers with any built-in Vagrant provisioner.
+* Synced folder support via `rsync` `sharedhost volume` `Container shared volume`.
+* Define Dockerhost specifc configurations so Vagrant can manage Containers
+   across DOCKERHOSTS.
+
+------------------------
+
+* Connect to dockerhost
+* Implament starting of baseimages
+* provision baseimages
+* Start/Stop/Terminate/Create Docker Instances
+* 
+
+
+# Workflow
+-> Connect to Docker Host via its API 
+-> Create the VM with a baseimg
+-> Connect to the VM and provision it like a aws machine would
+-> Start/Stop/Terminate
+-> getip function or bind to diffrent ssh ports like virtualbox provider
+
+## Features
+
+* Boot EC2 or VPC instances.
+* SSH into the instances.
+* Provision the instances with any built-in Vagrant provisioner.
+* Minimal synced folder support via `rsync`.
+* Define region-specifc configurations so Vagrant can manage machines
+  in multiple regions.
+
+
 # Vagrant AWS Provider
 
 <span class="badges">
