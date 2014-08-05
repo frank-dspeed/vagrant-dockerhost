@@ -4,7 +4,7 @@ Goal is to Use a Docker Host like the AWS Cloud.
 
 ## Features DOCKERHOST Provider
 
-* Boot Docker Containers.
+* RUN Docker Containers.
 * SSH into the Containers.
 * Provision the Containers with any built-in Vagrant provisioner.
 * Synced folder support via `rsync` `sharedhost volume` `Container shared volume`.
